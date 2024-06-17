@@ -1,0 +1,19 @@
+:root {
+  --font-family: 'RobotoRegular', sans-serif;
+  --font-bold: 'RobotoBold', sans-serif;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url(/fonts/RobotoRegular.woff), url(/fonts/RobotoRegular.woff2);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(/fonts/RobotoBold.woff), url(/fonts/RobotoBold.woff2);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
