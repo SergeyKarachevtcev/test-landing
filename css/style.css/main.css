@@ -504,6 +504,13 @@ legend {
   font-weight: 700;
 }
 
+@media (max-width: 1380px) {
+  /* footer */
+  .fotter-wrapper {
+    flex-direction: row;
+    row-gap: 50px;
+  }
+}
 @media (max-width: 991px) {
   /* header */
   .header-wrapper {
@@ -552,11 +559,6 @@ legend {
     text-align: center;
     color: #2e3a59;
     margin-bottom: 50px;
-  }
-  /* footer */
-  .fotter-wrapper {
-    flex-direction: row;
-    row-gap: 50px;
   }
   /* accordeon */
   .accordion {
