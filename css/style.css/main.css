@@ -507,8 +507,16 @@ legend {
 @media (max-width: 1380px) {
   /* footer */
   .fotter-wrapper {
+    display: flex;
+    flex-direction: column;
     flex-direction: row;
     row-gap: 50px;
+  }
+  .advantages {
+    max-width: 100%;
+  }
+  .reviews {
+    max-width: 100%;
   }
 }
 @media (max-width: 991px) {
