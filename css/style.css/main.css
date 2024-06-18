@@ -208,12 +208,31 @@ legend {
 
 /* hero */
 .hero-section {
+  overflow: hidden;
+  position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
   background-image: url(/img/hero/hero-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* paralax */
+.paralax-img {
+  position: absolute;
+  transform: translate3d 0, 0, 0;
+  z-index: -1;
+}
+
+.paralax-left {
+  top: 0%;
+  left: -15%;
+}
+
+.paralax-right {
+  top: -40%;
+  right: -15%;
 }
 
 .hero-section-img {
@@ -547,6 +566,9 @@ legend {
     padding: 0;
     margin: 0;
     background-image: none;
+  }
+  .paralax-img {
+    display: none;
   }
   .hero-section_tite {
     display: none;
