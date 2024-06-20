@@ -18,11 +18,13 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
     <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png" />
-
-    <!-- main css -->
-    <link rel="stylesheet" href="./css/style.css/swiper.css" />
     <!-- свайпер билиотека -->
-    <link rel="stylesheet" href="./css/style.css/main.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <!-- script -->
     <script src="./src/swiper.js" defer></script>
     <!-- свайпер билиотека -->
@@ -34,8 +36,8 @@
   </head>
   <body>
     <!-- header -->
-    <section class="header">
-      <div class="conteiner">
+    <section class="conteiner">
+      <div class="header">
         <div class="header-wrapper">
           <div class="header-logo">
             <img src="./img/header/header-logo.svg" alt="logo" width="216" height="63" />
@@ -53,16 +55,13 @@
       </div>
     </section>
     <!-- hero -->
-    <section class="hero-section">
-      <div class="conteiner">
-        <!-- mobile conteiner -->
-        <div class="hero-section-img">
-          <img src="./img/hero/hero-big.png" alt="berries-img" />
-        </div>
+    <section class="conteiner">
+      <div class="hero-section">
+        <div class="hero-hr"></div>
         <h1 class="hero-section_tite">Lorem ipsum, dolor sit amet consectetur</h1>
         <!-- main -->
         <div class="hero-section-wrapper">
-          <div class="hero-section-wrow">
+          <div class="hero-section-wrow hero-section-top-row">
             <div class="hero-section-wrow-block">
               <svg
                 class="hero-section-wrow-block_svg"
@@ -91,53 +90,81 @@
             <div class="hero-section-wrow-block">
               <svg
                 class="hero-section-wrow-block_svg"
-                width="64"
-                height="72"
-                viewBox="0 0 64 72"
+                width="61"
+                height="61"
+                viewBox="0 0 61 61"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M60 39.5V25C60 11.7452 49.2548 1 36 1H28C14.7452 1 4 11.7452 4 25V39.5"
+                <circle
+                  cx="18.69"
+                  cy="50.4106"
+                  r="7"
+                  transform="rotate(-15 18.69 50.4106)"
                   stroke="currentColor"
                   stroke-width="2" />
-                <path
-                  d="M9 31C9 18.2975 19.2975 8 32 8C44.7025 8 55 18.2975 55 31V39C55 51.7025 44.7025 62 32 62C19.2975 62 9 51.7025 9 39V31Z"
+                <rect
+                  x="17.9966"
+                  y="9.18535"
+                  width="30"
+                  height="30"
+                  transform="rotate(-15 17.9966 9.18535)"
                   stroke="currentColor"
                   stroke-width="2" />
-                <path
-                  d="M29.5 70.5L36 70.5C49.2548 70.5 60 59.7548 60 46.5L60 36"
+                <rect
+                  x="30.1054"
+                  y="8.01137"
+                  width="6"
+                  height="8"
+                  transform="rotate(-15 30.1054 8.01137)"
                   stroke="currentColor"
                   stroke-width="2" />
-                <rect x="1" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
-                <rect x="57" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
               </svg>
               <p class="hero-section-wrow-block_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
 
-          <div class="hero-section-wrow">
+          <div class="hero-section-wrow hero-section-central-row">
             <div class="hero-section-wrow-block">
               <svg
                 class="hero-section-wrow-block_svg"
-                width="64"
+                width="57"
                 height="72"
-                viewBox="0 0 64 72"
+                viewBox="0 0 57 72"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.5" y="1" width="54" height="70" rx="3" stroke="currentColor" stroke-width="2" />
                 <path
-                  d="M60 39.5V25C60 11.7452 49.2548 1 36 1H28C14.7452 1 4 11.7452 4 25V39.5"
+                  d="M9.5 1H47.5V6C47.5 7.65685 46.1569 9 44.5 9H12.5C10.8431 9 9.5 7.65685 9.5 6V1Z"
                   stroke="currentColor"
                   stroke-width="2" />
-                <path
-                  d="M9 31C9 18.2975 19.2975 8 32 8C44.7025 8 55 18.2975 55 31V39C55 51.7025 44.7025 62 32 62C19.2975 62 9 51.7025 9 39V31Z"
-                  stroke="currentColor"
-                  stroke-width="2" />
-                <path
-                  d="M29.5 70.5L36 70.5C49.2548 70.5 60 59.7548 60 46.5L60 36"
-                  stroke="currentColor"
-                  stroke-width="2" />
-                <rect x="1" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
-                <rect x="57" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
+                <g filter="url(#filter0_d_3_444)">
+                  <path
+                    d="M9.5 57C9.5 55.3431 10.8431 54 12.5 54H44.5C46.1569 54 47.5 55.3431 47.5 57V59C47.5 60.6569 46.1569 62 44.5 62H12.5C10.8431 62 9.5 60.6569 9.5 59V57Z"
+                    stroke="currentColor"
+                    stroke-width="2" />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_3_444"
+                    x="6.5"
+                    y="51"
+                    width="48"
+                    height="18"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dx="2" dy="2" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.764706 0 0 0 0 0.407843 0 0 0 0.4 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_444" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_444" result="shape" />
+                  </filter>
+                </defs>
               </svg>
               <p class="hero-section-wrow-block_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
@@ -152,25 +179,33 @@
             <div class="hero-section-wrow-block">
               <svg
                 class="hero-section-wrow-block_svg"
-                width="64"
-                height="72"
-                viewBox="0 0 64 72"
+                width="97"
+                height="87"
+                viewBox="0 0 97 87"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M60 39.5V25C60 11.7452 49.2548 1 36 1H28C14.7452 1 4 11.7452 4 25V39.5"
+                  d="M15.1607 61.5423C9.30285 55.6844 9.30284 46.1869 15.1607 40.3291L40.7138 14.7759C46.5717 8.91807 56.0692 8.91807 61.927 14.7759L66.3751 19.224C72.7391 25.588 72.1152 36.1228 65.2298 42.0046C61.3795 45.2937 57.381 48.849 54.1861 52.0092C50.446 55.7086 46.2117 60.4448 42.3971 64.8965C36.5133 71.7631 25.9905 72.372 19.6345 66.016L15.1607 61.5423Z"
                   stroke="currentColor"
                   stroke-width="2" />
                 <path
-                  d="M9 31C9 18.2975 19.2975 8 32 8C44.7025 8 55 18.2975 55 31V39C55 51.7025 44.7025 62 32 62C19.2975 62 9 51.7025 9 39V31Z"
+                  d="M13.1362 59.2873C7.76625 53.9174 7.26447 45.4046 12.1269 39.6212C16.5091 34.409 21.7879 28.3754 26.3021 23.9102C30.2798 19.9757 35.5538 15.3897 40.2348 11.4712C46.0198 6.62849 54.5205 7.13894 59.8823 12.5008L60.2826 12.9011C66.6467 19.2652 66.0228 29.7999 59.1374 35.6817C55.2871 38.9708 51.2886 42.5262 48.0937 45.6863C44.3536 49.3858 40.1192 54.1219 36.3046 58.5737C30.4209 65.4402 19.898 66.0492 13.542 59.6932L13.1362 59.2873Z"
                   stroke="currentColor"
                   stroke-width="2" />
+                <rect
+                  x="34.1523"
+                  y="26.7675"
+                  width="15.6653"
+                  height="15.6653"
+                  rx="7.83265"
+                  transform="rotate(-45 34.1523 26.7675)"
+                  stroke="currentColor"
+                  stroke-width="2" />
+                <rect x="69.5" y="63.9999" width="26" height="22" rx="1" stroke="currentColor" stroke-width="2" />
                 <path
-                  d="M29.5 70.5L36 70.5C49.2548 70.5 60 59.7548 60 46.5L60 36"
+                  d="M71.5 40.9994C78.5 42.9994 82.5 45.9999 82.5002 56.999"
                   stroke="currentColor"
                   stroke-width="2" />
-                <rect x="1" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
-                <rect x="57" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
               </svg>
               <p class="hero-section-wrow-block_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
@@ -205,30 +240,45 @@
             <div class="hero-section-wrow-block">
               <svg
                 class="hero-section-wrow-block_svg"
-                width="64"
-                height="72"
-                viewBox="0 0 64 72"
+                width="61"
+                height="61"
+                viewBox="0 0 61 61"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M60 39.5V25C60 11.7452 49.2548 1 36 1H28C14.7452 1 4 11.7452 4 25V39.5"
+                <circle
+                  cx="18.69"
+                  cy="50.4106"
+                  r="7"
+                  transform="rotate(-15 18.69 50.4106)"
                   stroke="currentColor"
                   stroke-width="2" />
-                <path
-                  d="M9 31C9 18.2975 19.2975 8 32 8C44.7025 8 55 18.2975 55 31V39C55 51.7025 44.7025 62 32 62C19.2975 62 9 51.7025 9 39V31Z"
+                <rect
+                  x="17.9966"
+                  y="9.18535"
+                  width="30"
+                  height="30"
+                  transform="rotate(-15 17.9966 9.18535)"
                   stroke="currentColor"
                   stroke-width="2" />
-                <path
-                  d="M29.5 70.5L36 70.5C49.2548 70.5 60 59.7548 60 46.5L60 36"
+                <rect
+                  x="30.1054"
+                  y="8.01137"
+                  width="6"
+                  height="8"
+                  transform="rotate(-15 30.1054 8.01137)"
                   stroke="currentColor"
                   stroke-width="2" />
-                <rect x="1" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
-                <rect x="57" y="32" width="6" height="14" rx="3" stroke="currentColor" stroke-width="2" />
               </svg>
               <p class="hero-section-wrow-block_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
+        <!-- mobile conteiner -->
+        <div class="hero-section-img">
+          <img src="./img/hero/hero-big.png" alt="berries-img" />
+        </div>
+        <img class="paralax-img paralax-right" src="./img/paralax/pattern.png" alt="bubles" data-speed="0.5" />
+        <img class="paralax-img paralax-left" src="./img/paralax/pattern2.png" alt="bubles" data-speed="0.5" />
       </div>
     </section>
 
@@ -255,14 +305,13 @@
               <p class="swiper_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
-
           <div class="swiper-pagination-wrapper">
             <div class="swiper-button-prev">
-              <img src="./img/accordeon/Vector.svg" alt="" />
+              <img src="./img/accordeon/Vector.svg" alt="arrow" />
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next">
-              <img src="./img/accordeon/Vector.svg" alt="" />
+              <img src="./img/accordeon/Vector.svg" alt="arrow" />
             </div>
           </div>
         </div>
@@ -270,11 +319,12 @@
     </section>
 
     <!-- footer -->
-    <section class="footer">
-      <div class="conteiner">
+    <section class="conteiner">
+      <div class="footer">
         <div class="fotter-wrapper">
           <!-- accordeon -->
           <section class="advantages">
+            <div class="advantages-hr"></div>
             <h3 class="advantages_title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
             <p class="advantages_content">Porro ab rerum omnis magnam eligendi error nobis dolore?</p>
             <div class="accordion">
@@ -351,83 +401,82 @@
 
           <!-- reviews -->
           <section class="reviews">
-            <div class="conteiner">
-              <h3 class="reviews_title">Lorem ipsum, dolor sit amet consectetur elit.</h3>
-              <div class="reviews-wrapper">
-                <div class="reviews-card">
-                  <img
-                    class="reviews-card-user_img"
-                    src="./img/reviews/user-img.png"
-                    alt="user-img"
-                    width="97"
-                    height="97" />
+            <div class="reviews-hr"></div>
+            <h3 class="reviews_title">Lorem ipsum, dolor sit amet consectetur elit.</h3>
+            <div class="reviews-wrapper">
+              <div class="reviews-card">
+                <img
+                  class="reviews-card-user_img"
+                  src="./img/reviews/user-img.png"
+                  alt="user-img"
+                  width="97"
+                  height="97" />
 
-                  <svg
-                    class="reviews-card-qutes_img left"
-                    width="40"
-                    height="26"
-                    viewBox="0 0 40 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19.4804 16.5425C19.4804 21.7657 15.1319 26 9.76674 26C4.40157 26 0.507458 21.9116 0.0531052 16.7069C-0.640556 8.76502 5.55625 2.11552 13.0795 0C10.5151 1.50963 8.72625 4.13515 8.42795 7.18869C8.86708 7.12801 9.31144 7.08493 9.76674 7.08493C15.1319 7.08493 19.4804 11.3187 19.4804 16.5425Z"
-                      fill="currentColor" />
-                    <path
-                      d="M40 16.5425C40 21.7657 35.6515 26 30.2859 26C24.9212 26 21.0266 21.9116 20.5718 16.7069C19.8781 8.76502 26.0749 2.11552 33.5986 0C31.0343 1.50963 29.2459 4.13515 28.9471 7.18869C29.3862 7.12801 29.8311 7.08493 30.2859 7.08493C35.6515 7.08493 40 11.3187 40 16.5425Z"
-                      fill="currentColor" />
-                  </svg>
+                <div class="reviews-card-wrapper">
+                  <p class="reviews-card_content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi
+                    autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti,
+                    iste nisi expedita, provident excepturi officia! Porro ab&nbsp;rerum omnis magnam eligendi error
+                    nobis dolore? Porro ab&nbsp;rerum omnis magnam eligendi error nobis dolore? Porro ab&nbsp;rerum
+                    omnis magnam eligendi error nobis dolore?
+                    <svg
+                      class="reviews-card-qutes_img left"
+                      width="40"
+                      height="26"
+                      viewBox="0 0 40 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.4804 16.5425C19.4804 21.7657 15.1319 26 9.76674 26C4.40157 26 0.507458 21.9116 0.0531052 16.7069C-0.640556 8.76502 5.55625 2.11552 13.0795 0C10.5151 1.50963 8.72625 4.13515 8.42795 7.18869C8.86708 7.12801 9.31144 7.08493 9.76674 7.08493C15.1319 7.08493 19.4804 11.3187 19.4804 16.5425Z"
+                        fill="currentColor" />
+                      <path
+                        d="M40 16.5425C40 21.7657 35.6515 26 30.2859 26C24.9212 26 21.0266 21.9116 20.5718 16.7069C19.8781 8.76502 26.0749 2.11552 33.5986 0C31.0343 1.50963 29.2459 4.13515 28.9471 7.18869C29.3862 7.12801 29.8311 7.08493 30.2859 7.08493C35.6515 7.08493 40 11.3187 40 16.5425Z"
+                        fill="currentColor" />
+                    </svg>
 
-                  <svg
-                    class="reviews-card-qutes_img right"
-                    width="40"
-                    height="26"
-                    viewBox="0 0 40 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19.4804 16.5425C19.4804 21.7657 15.1319 26 9.76674 26C4.40157 26 0.507458 21.9116 0.0531052 16.7069C-0.640556 8.76502 5.55625 2.11552 13.0795 0C10.5151 1.50963 8.72625 4.13515 8.42795 7.18869C8.86708 7.12801 9.31144 7.08493 9.76674 7.08493C15.1319 7.08493 19.4804 11.3187 19.4804 16.5425Z"
-                      fill="currentColor" />
-                    <path
-                      d="M40 16.5425C40 21.7657 35.6515 26 30.2859 26C24.9212 26 21.0266 21.9116 20.5718 16.7069C19.8781 8.76502 26.0749 2.11552 33.5986 0C31.0343 1.50963 29.2459 4.13515 28.9471 7.18869C29.3862 7.12801 29.8311 7.08493 30.2859 7.08493C35.6515 7.08493 40 11.3187 40 16.5425Z"
-                      fill="currentColor" />
-                  </svg>
-                  <div class="reviews-card-wrapper">
-                    <p class="reviews-card_content">
+                    <svg
+                      class="reviews-card-qutes_img right"
+                      width="40"
+                      height="26"
+                      viewBox="0 0 40 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.4804 16.5425C19.4804 21.7657 15.1319 26 9.76674 26C4.40157 26 0.507458 21.9116 0.0531052 16.7069C-0.640556 8.76502 5.55625 2.11552 13.0795 0C10.5151 1.50963 8.72625 4.13515 8.42795 7.18869C8.86708 7.12801 9.31144 7.08493 9.76674 7.08493C15.1319 7.08493 19.4804 11.3187 19.4804 16.5425Z"
+                        fill="currentColor" />
+                      <path
+                        d="M40 16.5425C40 21.7657 35.6515 26 30.2859 26C24.9212 26 21.0266 21.9116 20.5718 16.7069C19.8781 8.76502 26.0749 2.11552 33.5986 0C31.0343 1.50963 29.2459 4.13515 28.9471 7.18869C29.3862 7.12801 29.8311 7.08493 30.2859 7.08493C35.6515 7.08493 40 11.3187 40 16.5425Z"
+                        fill="currentColor" />
+                    </svg>
+                  </p>
+                  <p class="reviews-card-user_name">Jane Doe</p>
+                </div>
+              </div>
+
+              <div class="reviews-smoll-wrapper">
+                <div class="reviews-card-smoll">
+                  <div class="reviews-card-smoll-user_img">
+                    <img class="user_img" src="./img/reviews/user-img.png" alt="user-img" />
+                  </div>
+                  <div class="reviews-card-smoll-wrapper">
+                    <p class="reviews-card-smoll_content">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi
-                      autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti,
-                      iste nisi expedita, provident excepturi officia! Porro ab&nbsp;rerum omnis magnam eligendi error
-                      nobis dolore? Porro ab&nbsp;rerum omnis magnam eligendi error nobis dolore? Porro ab&nbsp;rerum
-                      omnis magnam eligendi error nobis dolore?
+                      autem aliquid
                     </p>
-                    <p class="reviews-card-user_name">Jane Doe</p>
+                    <p class="reviews-card-smoll-user_name">Jane Doe</p>
                   </div>
                 </div>
 
-                <div class="reviews-smoll-wrapper">
-                  <div class="reviews-card-smoll">
-                    <div class="reviews-card-smoll-user_img">
-                      <img class="user_img" src="./img/reviews/user-img.png" alt="user-img" />
-                    </div>
-                    <div class="reviews-card-smoll-wrapper">
-                      <p class="reviews-card-smoll_content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi
-                        autem aliquid
-                      </p>
-                      <p class="reviews-card-smoll-user_name">Jane Doe</p>
-                    </div>
+                <div class="reviews-card-smoll">
+                  <div class="reviews-card-smoll-wrapper">
+                    <p class="reviews-card-smoll_content">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi
+                      autem aliquid
+                    </p>
+                    <p class="reviews-card-smoll-user_name">Jane Doe</p>
                   </div>
-
-                  <div class="reviews-card-smoll">
-                    <div class="reviews-card-smoll-wrapper">
-                      <p class="reviews-card-smoll_content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi
-                        autem aliquid
-                      </p>
-                      <p class="reviews-card-smoll-user_name">Jane Doe</p>
-                    </div>
-                    <div class="reviews-card-smoll-user_img">
-                      <img class="user_img" src="./img/reviews/user-img.png" alt="user-img" />
-                    </div>
+                  <div class="reviews-card-smoll-user_img">
+                    <img class="user_img" src="./img/reviews/user-img.png" alt="user-img" />
                   </div>
                 </div>
               </div>

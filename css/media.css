@@ -1,16 +1,38 @@
+:root {
+  --font-family: 'RobotoRegular', sans-serif;
+  --font-bold: 'RobotoBold', sans-serif;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url(../fonts/RobotoRegular.woff) format('woff'), url(../fonts/RobotoRegular.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/RobotoBold.woff) format('woff'), url(../fonts/RobotoBold.woff2) format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
 @media (max-width: 1380px) {
   /* footer */
   .fotter-wrapper {
     display: flex;
     flex-direction: column;
-    flex-direction: row;
-    row-gap: 50px;
   }
+
   .advantages {
-    max-width: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
   .reviews {
-    max-width: 100%;
+    width: 100%;
+    padding-top: 27px;
   }
 }
 @media (max-width: 991px) {
@@ -25,14 +47,13 @@
     max-width: 100%;
     text-align: center;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .header-nav {
     display: none;
   }
   .header-logo {
+    padding: 0px;
     margin: 0 auto;
   }
   .hero-section-wrapper {
@@ -40,6 +61,9 @@
   }
 
   /* hero */
+  .hero-hr {
+    display: none;
+  }
   .hero-section {
     padding: 0;
     margin: 0;
@@ -52,12 +76,16 @@
     display: none;
   }
   .hero-section-img {
+    padding-left: 15px;
+    padding-right: 15px;
     display: block;
   }
 
   /* slider */
   .slider {
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .slider-section-title {
     font-family: var(--font-bold);
@@ -70,7 +98,10 @@
   }
 
   /* accordeon */
-
+  .advantages-hr {
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
   .accordion {
     display: flex;
     flex-direction: column;
@@ -107,15 +138,14 @@
     max-height: 0;
     opacity: 0;
     visibility: hidden;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out,
-      opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s,
+      visibility 0.1s ease-out 0.5s;
     border-bottom: 1px solid #e7ebf0;
   }
   .accordion__content.active {
     visibility: visible;
     opacity: 1;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out,
-      opacity 0.1s ease-out, visibility 0.1s ease-out;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
   }
   .accordion__title.active {
     color: #00c368;
@@ -125,7 +155,7 @@
     transform: rotate(180deg);
   }
   .accordion_span {
-    background-image: url(/img/accordeon/Vector.svg);
+    background-image: url(../img/accordeon/Vector.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,17 +165,24 @@
   }
 
   /* reviews */
+  .reviews-hr {
+    margin-top: 27px;
+    margin-bottom: 16px;
+  }
   .reviews {
     padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #fff;
   }
   .reviews_title {
     font-family: var(--font-bold);
     font-weight: 700;
     font-size: 24px;
+    line-height: 150%;
     text-align: center;
     color: #2e3a59;
-    margin-bottom: 90px;
+    margin-bottom: 44px;
   }
   .reviews-wrapper {
     display: flex;
@@ -188,12 +225,12 @@
     color: #a6abbd;
   }
   .left {
-    top: 20px;
-    left: 15px;
+    top: -60px;
+    left: 0%;
   }
   .right {
-    top: 20px;
-    right: 15px;
+    top: -60px;
+    right: 0%;
   }
   .reviews-card_content {
     font-family: var(--font-family);
@@ -243,9 +280,13 @@
   .advantages {
     padding-top: 0;
   }
+  .advantages_title {
+    font-size: 24px;
+    line-height: 150%;
+  }
   /* swiper */
   .swiper {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .swiper-pagination-wrapper {
     display: flex;
@@ -278,11 +319,16 @@
     margin-bottom: 22px;
   }
   .swiper_content {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #2e3a59;
     margin: 0 auto;
     max-width: 80%;
   }
   .swiper-slide {
-    margin-bottom: 0;
+    margin-bottom: 63px;
   }
 }
 
